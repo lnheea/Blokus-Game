@@ -1,0 +1,3 @@
+-In command prompt, navigate to the folder containing the code and enter:
+javac Driver.java 
+java Driver
