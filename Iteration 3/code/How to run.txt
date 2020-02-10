@@ -1,0 +1,54 @@
+Instructions on running the game
+
+Running from the .jar file
+	1. Navigate to the .jar file, right click and open it.
+	
+-----------------------------------------------------------------------------------------------------------------------------||	
+
+Running from the command line
+	1. Navigate to the folder containing the code
+	2. Run the commands:
+	javac Driver.java 
+	java Driver
+	
+_______________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________
+
+Instructions on playing the game
+
+Starting the game------------------------------------------------------------------------------------------------------------||
+	1. First select the game options.
+		BUG NOTE: The 2 player mode will work, but only if you do not start in the top left corner at the moment. 
+			The 3 and 4 player modes basically cause multiple players to be out right away because of this same bug.
+	2. Select the 'start game' button
+	
+Playing the game-------------------------------------------------------------------------------------------------------------||
+	1. Click on a piece in the bottom to select it.
+	2. Click on a block on the board to see where the piece is going to be placed.
+		a. Move this placed piece with the WASD keys, or click the 'Left', 'Right', 'Up', or 'Down' buttons.
+			You can also move the piece by clicking around more
+		b. Rotate this placed piece with the q and e keys, or click the 'CW' and 'CCW' buttons to rotate it.
+			BUG NOTE: After placing the initial piece, the key input stops working at the moment for moving and rotating the selected piece.
+	3. Click the place button when your piece is where you want it.
+	4. BUG NOTE: Occasionally the AI does not start taking turns because of a bug with finding a place to lay a piece
+		The game has to be restarted to fix this and get the AI to start taking turns again.
+	
+Giving up on the match--------------------------------------------------------------------------------------------------------||
+	1. Click the 'Give Up' button.
+	2. If you want to save, click yes.
+	3. If you do not want to save, click no.
+		NOTE: The game is saved to 'saveFile.txt', which includes the information needed to get the game back.
+			The load function is not implemented to prove this save file works, but it does store the information correctly.
+			
+_______________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________
+
+Other notes
+
+Notes on the save file--------------------------------------------------------------------------------------------------------||
+	4 kinds of lines:
+		Settings: Contains the game size, difficulty, score settings, the user's color, and the color options
+		Player: Contains the player number, if its a player or AI, if this player is out, and this player's color
+		Piece: Contains the name, color, and if the block has been placed
+		Block: Contains the x and y coordinate, if the block has been filled, the blocks color, 
+			the original RGB values, the temporary RGB values, and the temporary color name.
